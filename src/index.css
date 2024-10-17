@@ -1,0 +1,168 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+header{
+  background-color: #f5ba13;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  color: #eee;
+  padding: 10px 0px 10px 40px;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute; 
+  bottom: 0%;
+  
+}
+
+footer p{
+  color: #ccc;
+}
+
+.note{
+  box-shadow: 0 2px 5px #ccc;
+  background: #fff;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+.allnotes{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+.note h1{
+  font-size: 17px;
+  padding-bottom: 3px;
+}
+
+.note p{
+  font-size: 17px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1280px){
+  .allnotes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media (max-width: 1100px){
+  .allnotes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width: 750px){
+  .allnotes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 476px){
+  .allnotes{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+.contentCreator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+.top{
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  justify-content: center;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: #fff;
+  border-radius: 7px 7px ;
+}
+
+.top input{
+  outline: none;
+  border: 1px solid #fff;
+  margin: 20px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+.top textarea{
+  outline: none;
+  border: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin:20px 20px 20px 20px;  
+
+}
+
+.top button{
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #f5ba13;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-family: "McLaren", cursive;
+  
+}
+
+.addButton{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.deleteButton button{
+  border: none;
+  background-color: #fff;
+  color: #f5ba13;
+  font-size: 15px;
+  font-family: "McLaren", cursive;
+  cursor: pointer;
+}
+
+.deleteButton{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  margin-top: 5px;
+  
+}
+
+.svgIcon svg{
+  font-weight: bold;
+}
